@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | Utendørsliv</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .page-content {
+            padding: 180px 0 100px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .page-content h1 {
+            margin-bottom: 20px;
+        }
+
+        .page-content p {
+            margin-bottom: 40px;
+            color: var(--text-secondary);
+        }
+
+        .contact-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-item h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html"
+                    style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <img src="assets/logo.png" alt="Utendørsliv Logo" class="logo-img">
+                    <span>Utendørsliv</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="privacy.html">Personvern</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-content">
+            <a href="index.html" class="back-link">← Tilbake til forsiden</a>
+            <h1>Support & Kontakt</h1>
+            <p>Trenger du hjelp med appen eller har du forslag til forbedringer? Vi vil gjerne høre fra deg!</p>
+
+            <div class="contact-card">
+                <div class="contact-item">
+                    <h3>E-post</h3>
+                    <p>Send oss en melding når som helst:</p>
+                    <a href="mailto:support@stifinner.app">support@stifinner.app</a>
+                </div>
+                <div class="contact-item">
+                    <h3>GitHub</h3>
+                    <p>Rapporter tekniske feil direkte i koden:</p>
+                    <a href="https://github.com/glennsvendsen/utendorsliv/issues">Åpne et issue på GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Ofte stilte spørsmål</h3>
+                    <p>Sjekk vår GitHub Wiki for dokumentasjon og brukerveiledninger.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Utendørsliv. Alle rettigheter reservert.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
