@@ -24,7 +24,10 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, .logo {
+h1,
+h2,
+h3,
+.logo {
     font-family: 'Outfit', sans-serif;
 }
 
@@ -59,7 +62,7 @@ nav {
 }
 
 .logo-img {
-    height: 32px;
+    height: 64px;
 }
 
 .nav-links {
@@ -239,7 +242,7 @@ nav {
 footer {
     background: var(--white);
     padding: 80px 0 40px;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .footer-content {
@@ -270,7 +273,7 @@ footer {
 .footer-bottom {
     text-align: center;
     padding-top: 40px;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     color: var(--text-secondary);
     font-size: 14px;
 }
@@ -282,19 +285,19 @@ footer {
         text-align: center;
         padding-top: 120px;
     }
-    
+
     .hero-text h1 {
         font-size: 48px;
     }
-    
+
     .hero-text p {
         margin: 0 auto 40px;
     }
-    
+
     .feature-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .nav-links {
         display: none;
     }
