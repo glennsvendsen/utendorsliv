@@ -17,196 +17,178 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Utendørsliv Logo" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="#features">Funksjoner</a></li>
-                <li><a href="#showcase">Galleri</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="#download" class="btn-pill">Last ned</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <!-- Updated: Properly sized logo via style.css -->
+                    <img src="assets/logo.png" alt="Utendørsliv" class="logo-img">
+                    <span class="logo-text">Utendørsliv</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#features">Funksjoner</a></li>
+                    <li><a href="#showcase">Galleri</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="#download" class="btn-pill">Last ned</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero container">
             <div class="hero-content">
                 <div class="badge">
-                    <span>🏔️</span> Utforsk Marka på en ny måte
+                    <span>🏔️</span> Norges nye turapp
                 </div>
-                <h1>Oppdag nye <span>eventyr</span></h1>
-                <p>Norges mest motiverende turapp. Finn skjulte perler, samle poeng for hvert besøk, og klatre på
-                    topplisten sammen med vennene dine.</p>
+                <h1>Oppdag nye <span>eventyr</span> i naturen</h1>
+                <p>Finn skjulte perler, samle poeng for hvert besøk, og klatre på topplisten sammen med vennene dine.
+                    Gjør hver tur til en opplevelse.</p>
                 <div class="hero-ctas">
-                    <a href="#" class="store-btn">
+                    <a href="#" class="app-store-btn">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-                            alt="App Store" style="height: 56px;">
+                            alt="Last ned i App Store" height="50">
                     </a>
                 </div>
             </div>
 
             <div class="hero-image">
-                <div class="glow-orb"></div>
-                <div class="phone-mockup">
-                    <div class="phone-frame">
-                        <div class="phone-notch"></div>
-                        <img src="assets/screen-map.png" alt="Utendørsliv Kart" class="phone-screen">
+                <!-- Mockup Wrapper -->
+                <div class="device-mockup">
+                    <img src="assets/screen-map.png" alt="Kartvisning" class="device-screen">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Alt du trenger for turen</h2>
+                    <p>Vi har bygget verktøyene som gjør det enklere og morsommere å komme seg ut.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📍</div>
+                        <h3>Smart Gamifisering</h3>
+                        <p>Hvert turmål har en poengverdi. Samle poeng for alle innsjekkinger og se din fremgang i
+                            sanntid.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">☁️</div>
+                        <h3>100% Offline</h3>
+                        <p>Ingen dekning? Ingen problem. Kart og turer lagres lokalt, og synkroniseres automatisk når du
+                            er tilbake.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Leaderboards</h3>
+                        <p>Konkurrer med venner eller hele Norge. Se hvem som er mest aktiv i skogen denne måneden.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📸</div>
+                        <h3>Sosial Feed</h3>
+                        <p>Del bilder fra turene dine, gi "high-fives" og bli inspirert av hvor andre går på tur.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">💎</div>
+                        <h3>Bidragsyter-status</h3>
+                        <p>Støtt prosjektet og få unike fordeler, som muligheten til å legge til nye steder i kartet.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Verifiserte besøk</h3>
+                        <p>Vår GPS-algoritme sikrer at du faktisk er på stedet før du får poengene dine.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Showcase Section (Screenshots) -->
         <section id="showcase" class="showcase">
-            <div class="container section-head">
-                <h2>Designet for <span>turentusiaster</span></h2>
-                <p>En vakker og intuitiv brukeropplevelse som gjør det gøy å komme seg ut.</p>
-            </div>
-            <div class="container showcase-grid">
-                <div class="showcase-item">
-                    <img src="assets/screen-social.png" alt="Sosial Feed" class="showcase-img">
-                    <div class="showcase-label">
-                        <h4>Sosial Feed</h4>
-                        <span>Del dine turopplevelser</span>
-                    </div>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Slik ser det ut</h2>
+                    <p>Et rent og moderne design som setter naturen i fokus.</p>
                 </div>
-                <div class="showcase-item">
-                    <img src="assets/screen-leaderboard-new.png" alt="Toppliste" class="showcase-img">
-                    <div class="showcase-label">
-                        <h4>Toppliste</h4>
-                        <span>Konkurrer med venner</span>
+
+                <div class="showcase-grid">
+                    <div class="showcase-item">
+                        <div class="device-mockup">
+                            <img src="assets/screen-social.png" alt="Sosial Feed" class="device-screen">
+                        </div>
+                        <p class="showcase-caption">Sosial Feed</p>
                     </div>
-                </div>
-                <div class="showcase-item">
-                    <img src="assets/screen-paywall.png" alt="Bidragsyter" class="showcase-img">
-                    <div class="showcase-label">
-                        <h4>Bidragsyter</h4>
-                        <span>Støtt appens utvikling</span>
+                    <div class="showcase-item">
+                        <div class="device-mockup">
+                            <img src="assets/screen-leaderboard-new.png" alt="Toppliste" class="device-screen">
+                        </div>
+                        <p class="showcase-caption">Toppliste</p>
                     </div>
-                </div>
-                <div class="showcase-item">
-                    <img src="assets/screen-profile.png" alt="Profil" class="showcase-img">
-                    <div class="showcase-label">
-                        <h4>Din Profil</h4>
-                        <span>Se din fremgang</span>
+                    <div class="showcase-item">
+                        <div class="device-mockup">
+                            <img src="assets/screen-paywall.png" alt="Bidragsyter" class="device-screen">
+                        </div>
+                        <p class="showcase-caption">Bidragsyter</p>
+                    </div>
+                    <div class="showcase-item">
+                        <div class="device-mockup">
+                            <img src="assets/screen-profile.png" alt="Profil" class="device-screen">
+                        </div>
+                        <p class="showcase-caption">Din Profil</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="features container">
-            <div class="section-head">
-                <h2>Hva gjør <span>Utendørsliv</span> unikt?</h2>
-                <p>Vi har bygget alt du trenger for å gjøre turene dine mer sosiale, motiverende og planlagte.</p>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📍</div>
-                    <h3>Smart Gamifisering</h3>
-                    <p>Hvert turmål har en poengverdi. Samle poeng for hver innsjekk og følg med på din prosentvise
-                        fremgang i ulike kategorier.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">☁️</div>
-                    <h3>Full Offline-støtte</h3>
-                    <p>Mister du dekningen? Ikke noe problem. Appen lagrer dine innsjekkinger lokalt og synkroniserer
-                        automatisk når du er på nett igjen.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤳</div>
-                    <h3>Sosial Samhandling</h3>
-                    <p>Følg venner, se deres siste aktiviteter i feeden, og gi en "high-five" til deres nye
-                        prestasjoner.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💎</div>
-                    <h3>Bidragsyter Status</h3>
-                    <p>Som bidragsyter får du en premium badge, avansert statistikk og muligheten til å forme kartet ved
-                        å foreslå nye steder.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛠️</div>
-                    <h3>Admin Verktøy</h3>
-                    <p>Et kraftig dashboard for moderatorer og administratorer som sikrer at alle steder er korrekte og
-                        bilder er av høy kvalitet.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Posisjonsverifisering</h3>
-                    <p>Vår smarte algoritme sikrer rettferdig konkurranse ved å verifisere at du faktisk er tilstede ved
-                        turmålet før poeng deles ut.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="download" class="cta-wrap container">
-            <div class="cta-card">
-                <h2>Klar for tur?</h2>
-                <p>Bli med tusenvis av andre turglade mennesker i dag.</p>
-                <a href="#" class="btn-large">Start ditt neste eventyr</a>
-
-                <div class="status-grid">
-                    <div class="status-item">
-                        <span>12+</span>
-                        <span>Kategorier</span>
-                    </div>
-                    <div class="status-item">
-                        <span>100+</span>
-                        <span>Turmål</span>
-                    </div>
-                    <div class="status-item">
-                        <span>4.9</span>
-                        <span>Brukeromtale</span>
-                    </div>
+        <!-- CTA Section -->
+        <section id="download" class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Klar for ditt neste eventyr?</h2>
+                    <p>Last ned Utendørsliv i dag og bli en del av Norges raskest voksende turmiljø.</p>
+                    <a href="#" class="btn-white">Last ned gratis</a>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-top">
-                <div class="footer-logo-col">
-                    <a href="index.html" class="logo">
-                        <img src="assets/logo.png" alt="Utendørsliv Logo" class="logo-img">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="assets/logo.png" alt="Utendørsliv" class="logo-img">
+                        <span class="logo-text">Utendørsliv</span>
                     </a>
-                    <p>Utendørsliv er laget av turfolk, for turfolk. Vi brenner for å gjøre norsk natur mer tilgjengelig
-                        og engasjerende.</p>
+                    <p>Laget av turfolk, for turfolk. Vi gjør det enklere å oppdage og dele gleden ved norsk natur.</p>
                 </div>
-                <div class="footer-nav">
+                <div class="footer-col">
                     <h4>Utforsk</h4>
                     <ul>
                         <li><a href="#features">Funksjoner</a></li>
-                        <li><a href="#showcase">Galleri</a></li>
+                        <li><a href="#showcase">Bildegalleri</a></li>
+                        <li><a href="#download">Last ned</a></li>
                     </ul>
                 </div>
-                <div class="footer-nav">
-                    <h4>Support</h4>
+                <div class="footer-col">
+                    <h4>Hjelp & Støtte</h4>
                     <ul>
                         <li><a href="support.html">Kontakt oss</a></li>
-                        <li><a href="privacy.html">Personvern</a></li>
+                        <li><a href="support.html#faq">Ofte stilte spørsmål</a></li>
+                        <li><a href="privacy.html">Personvernerklæring</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Utendørsliv. Alle rettigheter reservert.</p>
-                <p>Laget med ❤️ i Norge</p>
+                <p>&copy; 2026 Utendørsliv. Alle rettigheter forbeholdt.</p>
             </div>
         </div>
     </footer>
-
-    <script>
-        window.addEventListener('scroll', function () {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-    </script>
 </body>
 
 </html>
