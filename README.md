@@ -12,3 +12,4 @@ To view the site locally, just open `index.html` in any browser.
 
 ## Deployment
 Any push to the `main` branch will trigger a GitHub Action that deploys the static files to the `gh-pages` branch.
+ 
